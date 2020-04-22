@@ -1,0 +1,138 @@
+.navbar{
+
+background-color: #262727;
+height: 130px;
+
+
+}
+h1{
+
+  color: #E6E6FA;
+  padding-left: 25%;
+
+}
+.gs-logo
+{
+  width: 12%;
+  margin-left: 1%;
+}
+.nav-item {
+  padding: 0 35px;
+}
+/* Features Section */
+
+#features{
+
+padding-left: 2%;
+}
+.feature-title {
+  font-size: 1.2rem;
+ text-align: center;
+ padding-left: 2%;
+
+
+}
+.form-title {
+
+  font-size: 1.1rem;
+ text-align: center;
+ padding: 2%;
+ padding-left: 0;
+ background-color: #e6e3e3;
+ border-radius: 10%;
+
+}
+
+.feature-box {
+  margin-top:12px;
+  width:150px;
+  height:150px;
+ border-style: hidden;
+
+
+
+}
+.feature-box:hover {
+  border-color: #E6E6FA;
+   border-style: solid;
+}
+
+#input-form{
+
+  padding-top: 2%;
+  padding-left: 2%;
+
+
+}
+#form-input-id-col-md-6 {
+
+  background-color: #f0f0f0;
+ max-width: 25%;
+ border-radius: 5%;
+
+
+}
+#form-output-id-col-md-6 {
+
+  background-color: #f0f0f0;
+ max-width: 25%;
+ border-radius: 5%;
+ margin-left: 30px;
+ height: 60%;
+
+
+
+}
+#form-input-id-col-md-2{
+
+      max-width: 40%;
+}
+#inlineFormCustomSelect{
+
+  max-width: 40%;
+}
+#button-calculate{
+
+  margin-left: 30%;
+  border-radius: 10%
+
+}
+.length-unit, .sr-unit{
+
+  padding-left: 1%;
+}
+#chart_div{
+
+  background-color: #f0f0f0;
+}
+#chart-title{
+
+  text-align: center;
+  margin-left: 25%;
+  margin-top: 10%;
+  font-weight: bold;
+
+}
+.text-overlay{
+
+  color: #C46210;
+  font-weight: bold;
+  position: absolute;
+}
+#img-overlay{
+
+  position: absolute;
+
+}
+#fl-text-overlay{ margin: 226px 0 350px 610px;}
+#l1-text-overlay{ margin: 184px 0 350px 595px;}
+#l2-text-overlay{ margin: 143px 0 350px 595px;}
+#l3-text-overlay{ margin: 75px 0 350px 530px;}
+#f0-text-overlay{ margin: 85px 0 350px 730px;}
+#f1-text-overlay{ margin: 60px 0 350px 700px;}
+#f2-text-overlay{ margin: 35px 0 350px 670px;}
+#f3-text-overlay{ margin: 15px 0 350px 620px;}
+#id-text-overlay{ margin: 180px 0 350px 280px;}
+#od-text-overlay{ margin: 475px 0 350px 280px;}
+#wd-text-overlay{ margin: 460px 0 350px 420px;}
+#pitch-text-overlay{ margin: 460px 0 350px 550px;}

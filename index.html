@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Spring Calculator - German Springs online spring calculator</title>
+  <!-- website icon -->
+
+  <link rel="icon" href="images/gs-icon.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/24895f81da.js" crossorigin="anonymous"></script>
+
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Boorstrap CSS link -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Bootstrap JavaScript link -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+ <!-- MDB bootstrap library for charts -->
+ <!-- Font Awesome -->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+ <!-- Google Fonts -->
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+
+ <!-- Material Design Bootstrap -->
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!-- navigation bar and logo section -->
+  <section>
+
+    <!-- Nav Bar -->
+
+    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark">
+
+      <img class="gs-logo" src="images/gs-logo.png" alt="germanspring-logo-img">
+      <h1 id="title">Spring Designer</h1>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Compression</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Tension</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cta">Torsion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cta">Place order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cta">About</a>
+          </li>
+        </ul>
+
+      </div>
+
+    </nav>
+  </section>
+
+  <!-- <section  id="features">
+    <div class="row ">
+      <div class="col-sm-1">
+        <img class="feature-box " src="images/compression.jpg" alt="compression-image">
+        <h3 class="feature-title">Compression</h3>
+
+      </div>
+      <div class="col-sm-1">
+        <img class="feature-box" src="images/tension.jpg" alt="tension-image">
+        <h3 class="feature-title">Tension</h3>
+
+      </div>
+      <div class="col-sm-1">
+        <img class="feature-box" src="images/torsion.jpg" alt="torsion-image">
+        <h3 class="feature-title">Torsion</h3>
+
+      </div>
+
+  </section> -->
+
+  <!-- FORM SEction -->
+
+  <section class="container-fluid"id="input-form">
+
+    <!-- INPUT form begining -->
+
+    <div class="form-row">
+
+      <div class="col-md-6" id="form-input-id-col-md-6">
+
+        <form id="form-input-param" action="/index.js">
+          <h3 class="form-title">Spring parameters - Input</h3>
+          <div class="form-group">
+            <label id="form-input-id-col-md-2" class="col-md-2  col-form-label">Units</label>
+            <select class="col-md-2 custom-select mr-sm-6" id="inlineFormCustomSelect">
+              <option value="met"selected>Metric</option>
+              <option value="Imp">Imperial</option>
+
+            </select>
+
+          </div>
+          <div class="form-group">
+            <label id="form-input-id-col-md-2" class="col-md-2 col-form-label">Material</label>
+            <select class="col-md-2 custom-select mr-sm-6" id="inlineFormCustomSelect">
+              <option value="CS" selected>Carbon Steel</option>
+              <option value="SS">Stainless Steel</option>
+
+            </select>
+
+          </div>
+          <div class="form-group">
+            <label id="form-input-id-col-md-2" class="col-md-2 col-form-label">Ends</label>
+            <select class="col-md-2 custom-select mr-sm-6" id="inlineFormCustomSelect">
+              <option value="CG"selected>Close & Ground</option>
+              <option value="CUG">Closed & Unground</option>
+              <option value="OUG">Open & Unground</option>
+              <option value="OG">Open & Ground</option>
+
+
+            </select>
+
+          </div>
+          <div class="form-group">
+            <label id="form-input-id-col-md-2" class="col-md-2 col-form-label">Wire diameter</label>
+            <input type="text" id="wd-input" value="0">
+            <label class="length-unit"> mm</label>
+
+
+          </div>
+          <div class="form-group">
+            <label id="form-input-id-col-md-2" class="col-md-2 col-form-label">Outer Diameter</label>
+            <input type="text" id="od-input" value="0">
+            <label class="length-unit"> mm</label>
+
+          </div>
+          <div class="form-group ">
+            <label id="form-input-id-col-md-2" class="col-md-2 col-form-label">Total Coils</label>
+            <input type="number" id="tc-input" value="0">
+
+          </div>
+          <div class="form-group">
+            <label id="form-input-id-col-md-2" class="col-md-2 col-form-label">Free Length</label>
+            <input type="number" id="fl-input" value="0">
+            <label class="length-unit"> mm</label>
+
+          </div>
+
+          <div class="form-group">
+            <label id="form-input-id-col-md-2" class="col-md-2 col-form-label">Operating point L1</label>
+            <input type="number" id="l1-input" value="0">
+            <label class="sr-unit">mm</label>
+
+          </div>
+          <div class="form-group">
+            <label id="form-input-id-col-md-2" class="col-md-2 col-form-label">Operating point L2</label>
+            <input type="number" id="l2-input" value="0">
+            <label class="sr-unit">mm</label>
+
+          </div>
+          <div class="form-group">
+            <label id="form-input-id-col-md-2" class="col-md-2 col-form-label">Operating point L3</label>
+            <input type="number" id="l3-input" value="0">
+            <label class="sr-unit">mm</label>
+
+          </div>
+          <div class="form-group">
+
+            <button onclick="springFunction()" type="button" class="btn btn-info" id="button-calculate">Calculate</button>
+
+          </div>
+
+
+        </form>
+
+
+
+      </div>
+
+
+        <!-- OUTPUT form begining -->
+
+      <div class="col-md-6" id="form-output-id-col-md-6">
+
+        <form id="form-output-param">
+          <h3 class="form-title">Spring parameters - Output</h3>
+
+          <div class="form-group">
+            <label id="form-input-id-col-md-2" class="col-md-2 col-form-label">Spring Constant</label>
+            <input type="number" id="sr-input" value="" readonly>
+            <label class="sr-unit"> N/mm</label>
+
+          </div>
+
+          <div class="form-group">
+            <label id="form-input-id-col-md-2" class="col-md-2 col-form-label">Solid length</label>
+            <input type="number" name="ln" value="" readonly>
+            <label class="length-unit"> mm</label>
+
+          </div>
+          <div class="form-group">
+            <label id="form-input-id-col-md-2" class="col-md-2 col-form-label">Solid Load</label>
+            <input type="number" name="fl" value="" readonly>
+            <label class="length-unit">N</label>
+
+          </div>
+          <div class="form-group ">
+            <label id="form-input-id-col-md-2" class="col-md-2 col-form-label">Spring index</label>
+            <input type="number" name="si" value="" readonly>
+
+          </div>
+          <div class="form-group">
+            <label id="form-input-id-col-md-2" class="col-md-2 col-form-label">Pitch</label>
+            <input type="number" name="p" value="" readonly>
+            <label class="length-unit"> mm</label>
+
+          </div>
+          <div class="form-group">
+            <label id="form-input-id-col-md-2" class="col-md-2 col-form-label">Mass per piece</label>
+            <input type="number" name="mass" value="" readonly>
+            <label class="sr-unit">g</label>
+          </div>
+                        <div id="chart_div">
+
+            </div>
+        </form>
+
+      </div>
+
+  <div class="col-md-6" id="form-output-id-col-md-6">
+
+<!-- portion for the chart -->
+
+  <div> <img id="img-overlay" src="images/compression-measurement.png" alt="">
+  <span class="text-overlay" id="id-text-overlay">0</span>
+  <span class="text-overlay" id="od-text-overlay">0</span>
+  <span class="text-overlay" id="fl-text-overlay">0</span>
+  <span class="text-overlay" id="pitch-text-overlay">0</span>
+  <span class="text-overlay" id="wd-text-overlay">0</span>
+  <span class="text-overlay" id="l1-text-overlay">0</span>
+  <span class="text-overlay" id="l2-text-overlay">0</span>
+  <span class="text-overlay" id="l3-text-overlay">0</span>
+  <span class="text-overlay" id="f0-text-overlay">0</span>
+  <span class="text-overlay" id="f1-text-overlay">0</span>
+  <span class="text-overlay" id="f2-text-overlay">0</span>
+  <span class="text-overlay" id="f3-text-overlay">0</span>
+
+  </div>
+  </div>
+
+    </div>
+
+  </section>
+
+
+
+
+
+<!-- Google chart JavaScript -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="index.js" type="text/javascript">  </script>
+
+
+</body>
+
+</html>
